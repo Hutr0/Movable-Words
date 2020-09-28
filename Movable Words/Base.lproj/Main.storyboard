@@ -63,7 +63,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="y5b-fL-DNj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -72,7 +72,7 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                                 <state key="normal" title="Перенести"/>
                                                 <connections>
-                                                    <action selector="toMoveWords:" destination="pFD-sV-ehj" eventType="touchUpInside" id="Rs2-GF-eA6"/>
+                                                    <action selector="toMove:" destination="pFD-sV-ehj" eventType="touchUpInside" id="V6I-2b-4sd"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-s9-l7l">
@@ -91,7 +91,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="zXL-De-DBW"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
