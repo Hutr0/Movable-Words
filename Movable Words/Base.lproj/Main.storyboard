@@ -125,11 +125,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="N3u-fm-IIZ"/>
+                                <exclude reference="oOK-aw-lDZ"/>
                                 <exclude reference="pxv-fk-4vu"/>
                                 <exclude reference="vSo-rm-wH5"/>
                                 <exclude reference="xxx-Dd-rSt"/>
-                                <exclude reference="N3u-fm-IIZ"/>
-                                <exclude reference="oOK-aw-lDZ"/>
                                 <exclude reference="9IX-oj-xR5"/>
                                 <exclude reference="BKZ-DZ-fSr"/>
                                 <exclude reference="tVq-2z-9b7"/>
@@ -138,16 +138,16 @@
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="xxx-Dd-rSt"/>
                                 <include reference="oOK-aw-lDZ"/>
+                                <include reference="xxx-Dd-rSt"/>
                                 <exclude reference="3X1-rO-sBR"/>
                                 <include reference="xYE-kU-lFd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
-                                <include reference="pxv-fk-4vu"/>
                                 <include reference="N3u-fm-IIZ"/>
+                                <include reference="pxv-fk-4vu"/>
                                 <exclude reference="3X1-rO-sBR"/>
                                 <include reference="9IX-oj-xR5"/>
                             </mask>
