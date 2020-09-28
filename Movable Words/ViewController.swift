@@ -10,8 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     var words: Array<String> = []
-//    var words: Dictionary<Int, String> = [:]
-//    var stringForResult: String?
 
     @IBOutlet weak var wordsTF: UITextField!
     @IBOutlet weak var fromTF: UITextField!
@@ -26,64 +24,56 @@ class ViewController: UIViewController {
     @IBAction func toMove(_ sender: Any) {
         
         toReadString()
-//        toMoveWords()
+        toMoveWords()
+        toPrintResult()
     }
     
     private func toReadString() {
         
-        guard let stringForMove = wordsTF.text else { return }
+        guard let string = wordsTF.text else { return }
         
-        var wordsForResult: String = ""
+//        var wordsForResult: String = ""
         var word: String = ""
         var num: Int = 0
 
-        for char in stringForMove {
+        for char in string {
             if char != " " {
                 word.append(char)
             } else {
-                word.append(" ")
+//                word.append(" ")
                 if words.count <= num {
                     words.append(word)
                     num += 1
                 } else {
                     words[num] = word
                 }
+                word = ""
             }
         }
-
-        for w in words {
-            wordsForResult.append(w)
-        }
-
-        wordsTF.text = wordsForResult
     }
     
     private func toMoveWords() {
         
         guard let from = Int(fromTF.text!) else { return }
         guard let to = Int(toTF.text!) else { return }
-        
-        var stringForMovement: String = ""
 
         var num: Int = 0
-//        var begin: String?
-//        var end: String?
         
-        for i in from-1...to-1 {
-            
-            words.insert(words.remove(at: i), at: num)
+        for i in from...to {
+            words.insert(words.remove(at: i-1), at: num)
             num += 1
-//            begin = words[num]
-//            words[num] = words[i]
-//            words.
+        }
+    }
+    
+    private func toPrintResult() {
+        
+        var stringForResult: String = ""
+        
+        for word in words {
+            stringForResult.append("\(word) ")
         }
         
-        
-        
-//        for word in words {
-//            stringForMovement.append(word)
-//        }
-        
-        wordsTF.text = "\(words[0]) 404R"
+        words = [] // Обязательно очистить массив, который объявлен в родителе относительно toReadString()
+        wordsTF.text = stringForResult
     }
 }
