@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nng-ld-oaV">
-                                <rect key="frame" x="16" y="172.33333333333334" width="343" height="106.00000000000003"/>
+                                <rect key="frame" x="16" y="173" width="343" height="106"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите строку" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF9-XW-TmN">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
@@ -36,28 +36,28 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-FI-dQQ">
-                                <rect key="frame" x="86.666666666666686" y="328.33333333333331" width="202" height="165.66666666666669"/>
+                                <rect key="frame" x="45.666666666666657" y="329" width="284" height="164"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перенести строку " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-Hp-L1q">
-                                        <rect key="frame" x="0.0" y="0.0" width="202" height="35.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перенести строку " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-Hp-L1q">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="35.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="4Ls-gK-Q27">
-                                        <rect key="frame" x="0.0" y="35.333333333333371" width="202" height="95"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Ls-gK-Q27">
+                                        <rect key="frame" x="0.0" y="35.333333333333307" width="284" height="93.333333333333314"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u7u-GV-44A">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="95"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="93.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="с" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vji-JB-kis">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="37"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="35.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r02-Va-67O">
-                                                        <rect key="frame" x="0.0" y="45" width="80" height="50"/>
+                                                        <rect key="frame" x="0.0" y="43.333333333333371" width="80" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="2Ae-K0-Cu5"/>
                                                             <constraint firstAttribute="height" constant="50" id="y5b-fL-DNj"/>
@@ -67,17 +67,25 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2A-Pm-CaF">
+                                                <rect key="frame" x="96" y="0.0" width="92" height="93.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                                <state key="normal" title="Перенести"/>
+                                                <connections>
+                                                    <action selector="toMoveWords:" destination="pFD-sV-ehj" eventType="touchUpInside" id="Rs2-GF-eA6"/>
+                                                </connections>
+                                            </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-s9-l7l">
-                                                <rect key="frame" x="122" y="0.0" width="80" height="95"/>
+                                                <rect key="frame" x="204" y="0.0" width="80" height="93.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="по" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ln-Qm-3Mz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="37"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="35.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ova-bH-3Hf">
-                                                        <rect key="frame" x="0.0" y="45" width="80" height="50"/>
+                                                        <rect key="frame" x="0.0" y="43.333333333333371" width="80" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="DMh-dN-DO8"/>
                                                             <constraint firstAttribute="height" constant="50" id="zXL-De-DBW"/>
@@ -89,8 +97,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="слов в начало строки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-IW-ovI">
-                                        <rect key="frame" x="0.0" y="130.33333333333337" width="202" height="35.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="слов в начало строки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-IW-ovI">
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="284" height="35.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -156,6 +164,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="fromTF" destination="r02-Va-67O" id="y0e-q9-P3t"/>
+                        <outlet property="toTF" destination="ova-bH-3Hf" id="NMb-Od-j6V"/>
+                        <outlet property="wordsTF" destination="AEl-kh-8VV" id="C3s-eB-Sxc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbm-i5-8Cu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
