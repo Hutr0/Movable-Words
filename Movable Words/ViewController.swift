@@ -10,7 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var stringForMovement: String = ""
-    var words: Dictionary<Int, String> = [:]
+    var words: Array<String> = []
+//    var words: Dictionary<Int, String> = [:]
 //    var stringForResult: String?
 
     @IBOutlet weak var wordsTF: UITextField!
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
         
         guard let stringForMove = wordsTF.text else { return }
         
-//        var wordsForResult: String = ""
+        var wordsForResult: String = ""
         var word: String = ""
         var num: Int = 0
 
@@ -42,16 +43,20 @@ class ViewController: UIViewController {
                 word.append(char)
             } else {
                 word.append(" ")
-                words = [num: word]
-                num += 1
+                if words.count <= num {
+                    words.append(word)
+                    num += 1
+                } else {
+                    words[num] = word
+                }
             }
         }
         
-//        for w in words {
-//            wordsForResult.append(w.value)
-//        }
-//
-//        stringForMovement = wordsForResult
+        for w in words {
+            wordsForResult.append(w)
+        }
+
+        wordsTF.text = wordsForResult
     }
     
     private func toMoveWords() {
@@ -65,13 +70,13 @@ class ViewController: UIViewController {
         
         for i in from-1...to-1 {
             
-            begin = words[num]
-            words[num] = words[i]
+//            begin = words[num]
+//            words[num] = words[i]
 //            words.
         }
         
-        for word in words {
-            stringForMovement.append(word.value)
-        }
+//        for word in words {
+//            stringForMovement.append(word.value)
+//        }
     }
 }
