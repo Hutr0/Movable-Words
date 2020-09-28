@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var stringForMovement: String = ""
     var words: Array<String> = []
 //    var words: Dictionary<Int, String> = [:]
 //    var stringForResult: String?
@@ -27,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func toMove(_ sender: Any) {
         
         toReadString()
-        toMoveWords()
+//        toMoveWords()
     }
     
     private func toReadString() {
@@ -51,7 +50,7 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
+
         for w in words {
             wordsForResult.append(w)
         }
@@ -64,19 +63,27 @@ class ViewController: UIViewController {
         guard let from = Int(fromTF.text!) else { return }
         guard let to = Int(toTF.text!) else { return }
         
+        var stringForMovement: String = ""
+
         var num: Int = 0
-        var begin: String?
-        var end: String?
+//        var begin: String?
+//        var end: String?
         
         for i in from-1...to-1 {
             
+            words.insert(words.remove(at: i), at: num)
+            num += 1
 //            begin = words[num]
 //            words[num] = words[i]
 //            words.
         }
         
+        
+        
 //        for word in words {
-//            stringForMovement.append(word.value)
+//            stringForMovement.append(word)
 //        }
+        
+        wordsTF.text = "\(words[0]) 404R"
     }
 }
