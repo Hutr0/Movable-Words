@@ -59,11 +59,21 @@ class ViewController: UIViewController {
         guard let from = Int(fromTF.text!) else { return }
         guard let to = Int(toTF.text!) else { return }
         
-        var num: Int = 0
-        
-        for i in from...to {
-            words.insert(words.remove(at: i-1), at: num)
-            num += 1
+        if from <= to && to <= words.count {
+            if words.count >= to {
+                var num: Int = 0
+                
+                for i in from...to {
+                    words.insert(words.remove(at: i-1), at: num)
+                    num += 1
+                }
+            }
+        } else {
+            let refreshAlert = UIAlertController(title: "Ошибка", message: "Введён неверный диапазон", preferredStyle: .alert)
+
+            refreshAlert.addAction(UIAlertAction(title: "Закрыть", style: .cancel, handler: nil))
+
+            self.present(refreshAlert, animated: true, completion: nil)
         }
     }
     
