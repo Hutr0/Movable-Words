@@ -30,7 +30,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="12w-XV-at0"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -62,7 +62,7 @@
                                                             <constraint firstAttribute="width" constant="60" id="2Ae-K0-Cu5"/>
                                                             <constraint firstAttribute="height" constant="50" id="y5b-fL-DNj"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
@@ -90,7 +90,7 @@
                                                             <constraint firstAttribute="width" constant="60" id="DMh-dN-DO8"/>
                                                             <constraint firstAttribute="height" constant="50" id="zXL-De-DBW"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
