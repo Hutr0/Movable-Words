@@ -32,19 +32,24 @@ class ViewController: UIViewController {
         
         guard let string = wordsTF.text else { return }
         
+        var num: Int = 1
         var word: String = ""
-//        var num: Int = 0
         var lastChar: Character?
         
         for char in string {
             if char != " " {
                 word.append(char)
+                if string.count == num {
+                    words.append(word)
+                    word = ""
+                }
             } else {
                 if lastChar != " " || lastChar == nil {
                     words.append(word)
                     word = ""
                 }
             }
+            num += 1
             lastChar = char
         }
     }
@@ -64,10 +69,15 @@ class ViewController: UIViewController {
     
     private func toPrintResult() {
         
+        var num: Int = 1
         var stringForResult: String = ""
         
         for word in words {
-            stringForResult.append("\(word) ")
+            stringForResult.append(word)
+            if words.count != num {
+                stringForResult.append(" ")
+            }
+            num += 1
         }
         
         words = [] // Обязательно очистить массив, который объявлен в родителе относительно toReadString()
