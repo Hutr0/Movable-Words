@@ -83,4 +83,8 @@ class ViewController: UIViewController {
         words = [] // Обязательно очистить массив, который объявлен в родителе относительно toReadString()
         wordsTF.text = stringForResult
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

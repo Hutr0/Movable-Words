@@ -25,41 +25,41 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-kh-8VV">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-kh-8VV">
                                         <rect key="frame" x="0.0" y="56" width="343" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="12w-XV-at0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-FI-dQQ">
-                                <rect key="frame" x="45.666666666666657" y="329" width="284" height="164"/>
+                                <rect key="frame" x="64.666666666666686" y="329" width="246" height="164"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перенести строку " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-Hp-L1q">
-                                        <rect key="frame" x="0.0" y="0.0" width="284" height="35.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перенести слова" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-Hp-L1q">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="35.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Ls-gK-Q27">
-                                        <rect key="frame" x="0.0" y="35.333333333333307" width="284" height="93.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="35.333333333333307" width="246" height="93.333333333333314"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u7u-GV-44A">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="93.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="93.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="с" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vji-JB-kis">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="35.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="35.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r02-Va-67O">
-                                                        <rect key="frame" x="0.0" y="43.333333333333371" width="80" height="50"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r02-Va-67O">
+                                                        <rect key="frame" x="0.0" y="43.333333333333371" width="60" height="50"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="80" id="2Ae-K0-Cu5"/>
+                                                            <constraint firstAttribute="width" constant="60" id="2Ae-K0-Cu5"/>
                                                             <constraint firstAttribute="height" constant="50" id="y5b-fL-DNj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -68,26 +68,26 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2A-Pm-CaF">
-                                                <rect key="frame" x="96" y="0.0" width="92" height="93.333333333333329"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                                <rect key="frame" x="75.999999999999986" y="0.0" width="94.000000000000014" height="93.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                                 <state key="normal" title="Перенести"/>
                                                 <connections>
                                                     <action selector="toMove:" destination="pFD-sV-ehj" eventType="touchUpInside" id="V6I-2b-4sd"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-s9-l7l">
-                                                <rect key="frame" x="204" y="0.0" width="80" height="93.333333333333329"/>
+                                                <rect key="frame" x="186" y="0.0" width="60" height="93.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="по" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ln-Qm-3Mz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="35.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="35.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ova-bH-3Hf">
-                                                        <rect key="frame" x="0.0" y="43.333333333333371" width="80" height="50"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ova-bH-3Hf">
+                                                        <rect key="frame" x="0.0" y="43.333333333333371" width="60" height="50"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="80" id="DMh-dN-DO8"/>
+                                                            <constraint firstAttribute="width" constant="60" id="DMh-dN-DO8"/>
                                                             <constraint firstAttribute="height" constant="50" id="zXL-De-DBW"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -97,8 +97,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="слов в начало строки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-IW-ovI">
-                                        <rect key="frame" x="0.0" y="128.66666666666669" width="284" height="35.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="в начало строки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-IW-ovI">
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="246" height="35.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -111,16 +111,16 @@
                         <constraints>
                             <constraint firstItem="Zni-FI-dQQ" firstAttribute="centerY" secondItem="lVG-de-adz" secondAttribute="centerY" id="3X1-rO-sBR"/>
                             <constraint firstItem="lVG-de-adz" firstAttribute="trailing" secondItem="Nng-ld-oaV" secondAttribute="trailing" constant="16" id="3lu-qQ-UaD"/>
-                            <constraint firstItem="Zni-FI-dQQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Nng-ld-oaV" secondAttribute="bottom" constant="40" id="9IX-oj-xR5"/>
+                            <constraint firstItem="Zni-FI-dQQ" firstAttribute="top" secondItem="Nng-ld-oaV" secondAttribute="bottom" constant="24" id="9IX-oj-xR5"/>
                             <constraint firstItem="Zni-FI-dQQ" firstAttribute="top" secondItem="Nng-ld-oaV" secondAttribute="bottom" constant="100" id="BKZ-DZ-fSr"/>
-                            <constraint firstItem="lVG-de-adz" firstAttribute="bottom" secondItem="Zni-FI-dQQ" secondAttribute="bottom" constant="32" id="N3u-fm-IIZ"/>
+                            <constraint firstItem="lVG-de-adz" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zni-FI-dQQ" secondAttribute="bottom" constant="32" id="N3u-fm-IIZ"/>
                             <constraint firstItem="Zni-FI-dQQ" firstAttribute="centerX" secondItem="lVG-de-adz" secondAttribute="centerX" id="iD8-9J-u0s"/>
                             <constraint firstItem="Nng-ld-oaV" firstAttribute="leading" secondItem="lVG-de-adz" secondAttribute="leading" constant="16" id="nxC-Dm-rvl"/>
-                            <constraint firstItem="lVG-de-adz" firstAttribute="bottom" secondItem="Zni-FI-dQQ" secondAttribute="bottom" constant="16" id="oOK-aw-lDZ"/>
+                            <constraint firstItem="lVG-de-adz" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zni-FI-dQQ" secondAttribute="bottom" constant="16" id="oOK-aw-lDZ"/>
                             <constraint firstItem="Nng-ld-oaV" firstAttribute="top" secondItem="lVG-de-adz" secondAttribute="top" constant="32" id="pxv-fk-4vu"/>
                             <constraint firstItem="Zni-FI-dQQ" firstAttribute="top" secondItem="Nng-ld-oaV" secondAttribute="bottom" constant="50" id="tVq-2z-9b7"/>
                             <constraint firstItem="Nng-ld-oaV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lVG-de-adz" secondAttribute="top" constant="100" id="vSo-rm-wH5"/>
-                            <constraint firstItem="Zni-FI-dQQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Nng-ld-oaV" secondAttribute="bottom" constant="16" id="xYE-kU-lFd"/>
+                            <constraint firstItem="Zni-FI-dQQ" firstAttribute="top" secondItem="Nng-ld-oaV" secondAttribute="bottom" constant="16" id="xYE-kU-lFd"/>
                             <constraint firstItem="Nng-ld-oaV" firstAttribute="top" secondItem="lVG-de-adz" secondAttribute="top" constant="16" id="xxx-Dd-rSt"/>
                         </constraints>
                         <variation key="default">
