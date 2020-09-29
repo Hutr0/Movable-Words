@@ -10,17 +10,17 @@ import UIKit
 class ViewController: UIViewController {
     
     var words: Array<String> = []
-
+    
     @IBOutlet weak var wordsTF: UITextField!
     @IBOutlet weak var fromTF: UITextField!
     @IBOutlet weak var toTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func toMove(_ sender: Any) {
         
         toReadString()
@@ -32,23 +32,20 @@ class ViewController: UIViewController {
         
         guard let string = wordsTF.text else { return }
         
-//        var wordsForResult: String = ""
         var word: String = ""
-        var num: Int = 0
-
+//        var num: Int = 0
+        var lastChar: Character?
+        
         for char in string {
             if char != " " {
                 word.append(char)
             } else {
-//                word.append(" ")
-                if words.count <= num {
+                if lastChar != " " || lastChar == nil {
                     words.append(word)
-                    num += 1
-                } else {
-                    words[num] = word
+                    word = ""
                 }
-                word = ""
             }
+            lastChar = char
         }
     }
     
@@ -56,7 +53,7 @@ class ViewController: UIViewController {
         
         guard let from = Int(fromTF.text!) else { return }
         guard let to = Int(toTF.text!) else { return }
-
+        
         var num: Int = 0
         
         for i in from...to {
